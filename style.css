@@ -1,0 +1,1942 @@
+@font-face {
+    font-family: sf pro display;
+    src: url(./assets/fonts/FontsFree-Net-SFProDisplay-Regular.ttf);
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    color: #fff;
+    background-color: #000;
+    overflow-x: hidden;
+}
+
+nav {
+    display: none;
+}
+
+.blured-container {
+    display: none;
+}
+
+.landing-page {
+    overflow-x: hidden;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.col-gap-8 {
+    --bs-gutter-x: auto;
+}
+
+p {
+    font-size: 1.125rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+}
+
+a:hover {
+    color: #fff;
+}
+
+.btn {
+    font-weight: 500;
+    font-size: 1.125rem;
+    background: linear-gradient(90.1deg, #20D4FE 0.09%, #B722FF 99.91%);
+    border-radius: 6px;
+    outline: none;
+    color: #fff;
+    border: none;
+}
+
+.btn:active, .btn:focus{
+    box-shadow: none !important;
+    border: none;
+}
+
+.btn:hover {
+    background: linear-gradient(270deg, #20D4FE 0.09%, #B722FF 99.91%);
+    transition: 0.3s all;
+    font-weight: 600;
+}
+
+.arrow-right {
+    background-image: url("./assets//svg/arrow-right.svg");
+    width: 30px;
+    height: 15px;
+    background-repeat: no-repeat;
+}
+
+.arrow-right:hover {
+    background-image: url("./assets/svg/arrow-hover.svg");
+}
+
+header {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    background-color: #000;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+
+}
+
+header ul li {
+    margin-right: 3.9375rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+header ul li a:hover {
+    background: linear-gradient(89.48deg, #20D4FE 1.82%, #B722FF 111.13%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-emphasis-color: transparent;
+
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.btn-primary {
+    padding: 12px 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.btn-secondary {
+    padding: 18px 31px;
+}
+
+
+.technology {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: 8.875rem 0;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.technology h1 {
+    font-size: 4.375rem;
+    font-weight: 800;
+    margin: auto;
+    margin-bottom: 1.6875rem;
+    text-align: center;
+}
+
+.technology span {
+    display: block;
+
+}
+
+.technology h1 span {
+    background: linear-gradient(90deg, #20D4FE 0%, #B722FF 118.92%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-emphasis-color: transparent;
+}
+
+.technology p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 2.1875rem;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+}
+
+.gallery {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas:
+        "one two three"
+        "four two five";
+}
+
+.item1 {
+    grid-area: one;
+}
+
+.item2 {
+    grid-area: two;
+}
+
+.item3 {
+    grid-area: three;
+}
+
+.item4 {
+    grid-area: four;
+}
+
+.item5 {
+    grid-area: five;
+}
+
+.our-services {
+    margin-top: 6.625rem;
+}
+
+.our-services h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    background: linear-gradient(90deg, #20D4FE 0%, #B722FF 118.92%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-emphasis-color: transparent;
+}
+
+.our-services h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 3.75rem;
+}
+
+.our-services span {
+    display: block;
+}
+
+.services-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.services-cards .card {
+    background-color: #000;
+    border: 1px solid #fff;
+    padding: 4.375rem 2.8125rem 2.5rem 2.5rem;
+    width: 32%;
+    padding-bottom: 2.625rem;
+}
+
+.services-cards .card:hover {
+    border-image: linear-gradient(#20D4FE 100%, #B722FF 100%) 100;
+
+}
+
+.services-cards .card:hover svg {
+    stroke: #87ceeb;
+}
+
+.services-cards .card h6 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.services-cards .card p {
+    text-align: left;
+}
+
+.services-cards .card .icon {
+    padding-bottom: 1.5625rem;
+}
+
+.services-cards .card a {
+    position: absolute;
+    bottom: 1.25rem;
+}
+
+span.see-more-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.see-more {
+    margin-top: 2.5rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-right: 3.75rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.see-more::before {
+    content: "";
+    position: absolute;
+    background-image: url("./assets/img/arrow-right.png");
+    background-repeat: no-repeat;
+    right: 15px;
+    height: 15px;
+    width: 30px;
+    transform: translateY(-32%);
+    top: 50%;
+    transition: .3s all;
+}
+
+.see-more:hover::before {
+    transform: translate(10px, -32%);
+}
+
+.see-more svg {
+    margin-left: 1.25rem;
+}
+
+.see-more:hover svg {
+    stroke: linear-gradient(to right, #20D4FE 0%, #B722FF 100%);
+}
+
+.about-us {
+    padding: 8.125rem 0;
+}
+
+.about-us h3 {
+    background: linear-gradient(90deg, #20D4FE 0%, #B722FF 118.92%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-emphasis-color: transparent;
+    font-size: 2rem;
+}
+
+.comapny-assets ul {
+    list-style: none;
+    display: flex;
+}
+
+.comapny-assets ul li {
+    min-width: 300px;
+}
+
+.comapny-assets ul li h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    background: linear-gradient(90deg, #20D4FE 0%, #B722FF 118.92%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-emphasis-color: transparent;
+}
+
+.comapny-assets ul li p {
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+
+.about-details {
+    display: flex;
+}
+
+.asset-details h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    background: linear-gradient(90.15deg, #20D4FE -14.67%, #B722FF 99.91%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-emphasis-color: transparent;
+}
+
+.asset-details p {
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.our-excellence {
+    padding-bottom: 8.125rem;
+}
+
+.our-excellence h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 3.75rem;
+}
+
+.excellence-apart {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2.5rem;
+}
+
+.excellence-apart span {
+    background: linear-gradient(180deg, #20D4FE 0%, #B722FF 100%);
+    width: 2.375rem;
+    height: 2.375rem;
+    font-size: 1.0625rem;
+    border-radius: 50%;
+    padding: 11px 8px;
+    margin-right: 2.0625rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.portfolio {
+    text-align: center;
+}
+
+.portfolio h3 {
+    font-size: 2rem;
+    font-weight: 400;
+    background: linear-gradient(90deg, #20D4FE 0%, #B722FF 118.92%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-emphasis-color: transparent;
+}
+
+.portfolio h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-areas:
+        "one two three"
+        "four two five";
+    gap: 1.25rem;
+    margin-top: 3rem;
+}
+
+.portfolio-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-image .overlays {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: .3s all;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.portfolio-image:hover .overlays {
+    left: -100%;
+}
+
+.portfolio-image.item-1 {
+    grid-area: one;
+}
+
+.portfolio-image.item-2 {
+    grid-area: two;
+}
+
+.portfolio-image.item-3 {
+    grid-area: three;
+}
+
+.portfolio-image.item-4 {
+    grid-area: four;
+}
+
+.portfolio-image.item-5 {
+    grid-area: five;
+}
+
+.portfolio img {
+    width: 100%;
+    height: 100%;
+}
+
+.testimonials {
+    text-align: center;
+    margin-top: 7.6875rem;
+}
+
+.testimonials h4 {
+    font-size: 2rem;
+    font-weight: 600;
+    background: linear-gradient(90deg, #20D4FE 0%, #B722FF 118.92%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-emphasis-color: transparent;
+}
+
+.testimonials span {
+    display: block;
+}
+
+.testimonials .slider {
+    padding: 32px;
+    color: #fff;
+}
+
+.testimonials .slider .swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.testimonials .slider__flex {
+    display: flex;
+    align-items: flex-start;
+}
+
+.testimonials .slider__col {
+    display: flex;
+    flex-direction: column;
+    margin-right: 32px;
+    flex: 0 0 450px;
+    max-width: 450px;
+}
+
+.testimonials .slider__thumbs {
+    height: calc(400px - 96px);
+}
+
+.testimonials .slider__thumbs .slider__image {
+    transition: 0.25s;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    opacity: 0.5;
+}
+
+.testimonials .slider__thumbs .slider__image:hover {
+    opacity: 1;
+}
+
+.testimonials .slider__thumbs .swiper-slide-thumb-active .slider__image {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+.testimonials .slider__images {
+    width: 100%;
+    flex: 1;
+    overflow: hidden;
+}
+
+.testimonials .slider__image {
+    width: 100%;
+    flex: 1;
+    overflow: hidden;
+}
+
+.testimonials .person {
+    background: #2D2D2D;
+    border-radius: 6px;
+    display: flex;
+    padding: 1.25rem 1.5rem;
+    text-align: left;
+    align-items: center;
+    margin-bottom: 2.0625rem;
+}
+
+.testimonials .person .icon {
+    margin-right: 1rem;
+}
+
+.testimonials .reviews {
+    text-align: left;
+    overflow-y: scroll;
+    max-height: 300px;
+    scroll-behavior: smooth;
+}
+
+.testimonials .reviews h6 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.testimonials .reviews p {
+    padding: 1rem auto;
+    margin-top: 1rem;
+    line-height: 1.6;
+    letter-spacing: 0.08em;
+}
+
+.testimonials .reviews .rating {
+    background: url("./assets/svg/Star.svg");
+    height: 19px;
+    width: 19px;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+.contact-us {
+    display: flex;
+    margin: 8.125rem 5.625rem;
+}
+
+.contact-us .contact-us-profile {
+    flex: 0 0 40%;
+    max-width: 40%;
+    margin-right: 5rem;
+}
+
+.contact-us .contact-us-profile p {
+    margin-top: 9px;
+}
+
+.contact-us .contact-us-details {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-us-details ul:nth-child(1) {
+    margin-right: 6.25rem;
+}
+
+.contact-us-details ul li:nth-child(1) {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.contact-us-details ul li {
+    display: flex;
+    margin: 1.25rem auto;
+    align-items: center;
+}
+
+.contact-us-details ul li a {
+    font-size: 1.125rem;
+    font-weight: 400px;
+}
+
+.contact-us-details .contact-icon {
+    margin-right: 1.25rem;
+}
+
+.contact-us-details ul li span {
+    display: block;
+}
+
+footer {
+    padding: 2.375rem 4.375rem;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #383838;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+}
+
+footer ul li {
+    margin-right: 1.5rem;
+}
+
+footer a svg:hover {
+    stroke: #88ceeb;
+}
+
+footer a svg:hover path {
+    fill: #88ceeb;
+}
+
+/* about-us-css */
+.about-us-wrapper.container {
+    padding: 0 70px;
+}
+
+.about-us-wrapper p {
+    text-align: justify;
+}
+
+.about-us-wrapper h3 {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.about-us-wrapper h4 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.about-us-wrapper .connection {
+    margin-top: 97px;
+}
+
+.about-us-wrapper .connection h1 {
+    font-size: 66px;
+    font-weight: 700;
+}
+
+.about-us-wrapper .connection-gallery {
+    width: 100%;
+    display: flex;
+    margin: 100px auto;
+}
+
+.about-us-wrapper .connection .connection-gallery .connection-gallery-image:first-child {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.about-us-wrapper .connection .connection-gallery .connection-gallery-image:last-child {
+    flex: 0 0 40%;
+}
+
+.about-us-wrapper .founder-ceo {
+    border-top: 2px solid rgba(255, 255, 255, 0.25);
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.25);
+    padding-bottom: 100px;
+}
+
+.founder-ceo .team {
+    display: flex;
+    margin-top: 100px;
+}
+
+.about-us-wrapper .team .sub-title {
+    flex: 0 0 30%;
+    margin-right: 20px;
+    max-width: 30%;
+}
+
+.about-us-wrapper .team .sub-title h2 {
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.about-us-wrapper .team .description {
+    flex: 1;
+    margin-top: 7px;
+}
+
+.about-us-wrapper .team .description h3 {
+    font-size: 24px;
+    text-align: justify;
+    margin-bottom: 63px;
+}
+
+.about-us-wrapper .founder-ceo .ceo-wrapper {
+    margin-top: 60px;
+    display: flex;
+}
+
+.about-us-wrapper .founder-ceo .ceo-wrapper .ceo {
+    flex: 0 0 30%;
+    display: flex;
+    align-items: flex-start;
+    margin-right: 20px;
+}
+
+.about-us-wrapper .founder-ceo .ceo-wrapper .ceo .img-wrapper {
+    margin-right: 27px;
+}
+
+.about-us-wrapper .founder-ceo .ceo-detail h5 {
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.about-us-wrapper .company-aim blockquote {
+    flex: 1;
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.about-us-wrapper .snapshot-wrapper {
+    margin-top: 130px;
+    text-align: center;
+}
+
+.about-us-wrapper .connection span,
+.about-us-wrapper .snapshot-wrapper h3 {
+    background: linear-gradient(90deg, #20D4FE 0%, #B722FF 118.92%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-emphasis-color: transparent;
+}
+
+.about-us-wrapper .snapshot-wrapper .snapshot-projects {
+    margin-top: 100px;
+}
+
+.about-us-wrapper .snapshot-projects ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-us-wrapper .snapshot-projects ul:first-child {
+    margin-bottom: 66px;
+}
+
+.about-us-wrapper .company-benefits {
+    margin-top: 130px;
+    text-align: center;
+}
+
+.about-us-wrapper .company-benefits h3 {
+    background: linear-gradient(90deg, #20D4FE 0%, #B722FF 118.92%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-emphasis-color: transparent;
+}
+
+.about-us-wrapper .benefits {
+    display: flex;
+    flex-direction: column;
+    padding-top: 75px;
+}
+
+.about-us-wrapper .benefits ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-us-wrapper .company-benefits .benefits ul li:first-child {
+    margin-right: 100px;
+}
+
+.about-us-wrapper .company-benefits .benefits ul li {
+    min-width: 350px;
+    width: 100%;
+    border-bottom: 0.5px solid #7B7B7B;
+    padding-bottom: 30px;
+}
+
+.about-us-wrapper .company-benefits .benefits ul li .title {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 0;
+}
+
+.about-us-wrapper .benefits ul li .title h4 {
+    background: linear-gradient(90deg, #20D4FE 0%, #B722FF 118.92%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-emphasis-color: transparent;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width:1280px) {
+    header .logo svg {
+        width: 141px !important;
+        height: auto;
+        margin-right: 10px;
+    }
+
+    .btn {
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    header ul li {
+        font-size: 1.25rem;
+        margin-right: 3.75rem;
+    }
+
+    .technology {
+        margin: 6.375rem auto 2.5rem auto;
+    }
+
+    .technology h1 {
+        font-size: 3.25rem;
+    }
+
+    .technology p {
+        font-size: 1.125rem;
+        margin-bottom: 10px
+    }
+
+    .our-services {
+        margin-top: 2.3125rem;
+    }
+
+    .our-services h3 {
+        font-size: 1.625rem;
+    }
+
+    .our-services h2 {
+        font-size: 2rem;
+        margin-bottom: 3.75rem;
+    }
+
+    .services-cards .card {
+        padding: 3.875rem 12px 3.75rem 1.875rem;
+    }
+
+    .services-cards .card h6 {
+        font-size: 1.25rem;
+    }
+
+    .services-cards .card p {
+        font-size: 1rem;
+    }
+
+    .see-more {
+        margin-top: 1.875rem;
+        font-size: 1.125rem;
+    }
+
+    .about-us {
+        padding: 5rem 0;
+    }
+
+    .about-us h3 {
+        font-size: 1.625rem;
+    }
+
+    .about-us .about-company h2 {
+        font-size: 2rem;
+    }
+
+    .about-us .about-company p {
+        font-size: 1rem;
+    }
+
+    .comapny-assets ul li h3 {
+        font-size: 2rem;
+    }
+
+    .comapny-assets ul li p {
+        font-size: 15px;
+    }
+
+    .our-excellence {
+        padding-bottom: 5rem;
+    }
+
+    .our-excellence h3 {
+        font-size: 1.875rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .excellence-apart span {
+        width: 28px;
+        height: 28px;
+        font-size: 13px;
+        margin-right: 25px;
+    }
+
+    .excellence-apart h4 {
+        font-size: 1.25rem;
+    }
+
+    .excellence-apart p {
+        font-size: 1rem;
+    }
+
+    .portfolio h3 {
+        font-size: 1.625rem;
+    }
+
+    .portfolio h2 {
+        font-size: 2rem;
+    }
+
+    .portfolio-grid {
+        margin-top: 1.9375rem;
+    }
+
+    .testimonials {
+        margin-top: 4.6875rem;
+    }
+
+    .testimonials h4 {
+        font-size: 1.625rem;
+    }
+
+    .testimonials h2 {
+        font-size: 2rem;
+    }
+
+    .contact-us {
+        margin: 83px 30px 0;
+    }
+
+    .contact-us-details ul:first-child {
+        min-width: 10rem;
+        margin-right: 0.75rem;
+    }
+
+    footer h4 {
+        font-size: 0.875rem;
+    }
+
+    /* about us css */
+    .about-us-wrapper p {
+        font-size: 14px;
+    }
+
+    .about-us-wrapper.container {
+        padding: 0 2.125rem;
+    }
+
+    .about-us-wrapper .connection {
+        margin-top: 5.8125rem;
+    }
+
+    .about-us-wrapper .connection h1 {
+        font-size: 3.25rem;
+        font-weight: 600;
+    }
+
+    .about-us-wrapper .connection-gallery {
+        margin: 3.125rem 0 3.75rem;
+    }
+
+    .about-us-wrapper .connection .connection-gallery .connection-gallery-image:first-child {
+        height: 300px;
+        width: 100%;
+    }
+
+    .about-us-wrapper .connection .connection-gallery .connection-gallery-image:last-child {
+        flex: 0 0 40%;
+        height: 300px;
+    }
+
+    .about-us-wrapper .connection .image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .about-us-wrapper .founder-ceo .team {
+        margin-top: 5rem;
+    }
+
+    .about-us-wrapper .team h2,
+    .about-us-wrapper h4 {
+        font-size: 2rem;
+    }
+
+    .about-us-wrapper .team .sub-title h2 {
+        font-size: 2.5rem;
+    }
+
+    .about-us-wrapper .team .description h3 {
+        font-size: 1rem;
+        margin-bottom: 2.375rem;
+    }
+
+    .about-us-wrapper .founder-ceo {
+        padding-bottom: 3.75rem;
+    }
+
+    .about-us-wrapper .founder-ceo .ceo-detail h5 {
+        font-size: 1.125rem;
+    }
+
+    .about-us-wrapper .founder-ceo .ceo-wrapper .ceo .img-wrapper {
+        width: 4.8125rem;
+    }
+
+    .about-us-wrapper .company-aim blockquote {
+        font-size: 1.5rem;
+    }
+
+    .about-us-wrapper .snapshot-wrapper {
+        margin-top: 3.75rem;
+    }
+
+    .about-us-wrapper h3 {
+        font-size: 1.625rem;
+    }
+
+    .about-us-wrapper .snapshot-projects ul li svg,
+    .about-us-wrapper .snapshot-projects ul li img {
+        width: 7.125rem;
+    }
+
+    .about-us-wrapper .snapshot-projects ul:first-child {
+        margin-bottom: 2.8125rem;
+    }
+
+    .about-us-wrapper .company-benefits {
+        margin-top: 5rem;
+    }
+
+    .about-us-wrapper .team h2,
+    .about-us-wrapper h4 {
+        font-size: 1.75rem;
+    }
+
+    .about-us-wrapper .benefits ul li svg {
+        width: 51px;
+        height: 50px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .container,
+    .about-us-wrapper.container {
+        max-width: 1400px !important;
+    }
+}
+
+@media screen and (max-width:1050px) {
+    .testimonials .slider .person .icon {
+        width: 52px;
+        height: 52px;
+        margin-right: 12px;
+    }
+
+    .testimonials .slider .person .icon img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .testimonials .slider .person p {
+        font-size: 11px;
+    }
+
+    .testimonials .slider .person h5 {
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    .about-us-wrapper .founder-ceo .team .sub-title h2 {
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width:991px) {
+    p {
+        margin: 0;
+    }
+
+    header ul li {
+        font-size: 14px;
+        margin-right: 42px;
+    }
+
+    .comapny-assets ul li {
+        min-width: 12.5rem;
+    }
+
+    .testimonials .slider {
+        padding: 20px 0;
+    }
+
+    .testimonials .slider .slider__col {
+        flex: 0 0 333px;
+        max-width: 333px;
+    }
+
+    .about-us-wrapper .connection h1 {
+        font-size: 45px;
+    }
+
+    .about-us-wrapper .snapshot-wrapper .snapshot-projects {
+        margin-top: 3.75rem;
+    }
+
+    .about-us-wrapper .snapshot-projects ul {
+        margin: auto 2.1875rem 2.8125rem;
+    }
+
+    .contact-us .contact-us-profile {
+        margin-right: 3rem;
+    }
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .col-gap-8 {
+        --bs-gutter-x: 8rem !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    p {
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    .btn-primary {
+        font-size: 9px;
+        padding: 6px 9px;
+    }
+
+    .btn-secondary {
+        padding: 11px 12px;
+        font-size: 12px;
+    }
+
+    header .logo svg {
+        width: 92px !important;
+        height: auto;
+    }
+
+    .technology {
+        margin: 67px auto;
+    }
+
+    .technology h1 {
+        font-size: 36px;
+        margin-bottom: 16px;
+    }
+
+    .technology p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .technology h1 span,
+    .technology p span {
+        display: inline-block;
+    }
+
+    .our-services h3 {
+        font-size: 18px;
+    }
+
+    .our-services h2 {
+        font-size: 24px;
+        margin-bottom: 22px;
+    }
+
+    .services-cards .card {
+        width: 32%;
+        padding: 16px 16px 60px;
+    }
+
+    .services-cards .card h6 {
+        font-size: 14px;
+    }
+
+    .see-more {
+        margin-top: 16px;
+        font-size: 12px;
+    }
+
+    .about-us {
+        padding-top: 70px;
+    }
+
+    .about-us .row>* {
+        padding-right: 0 !important;
+    }
+
+    .about-us h3 {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .about-us .about-company h2 {
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .about-us .about-company h2 svg {
+        width: 25px;
+        height: auto;
+    }
+
+    .comapny-assets ul li:nth-child(1) {
+        min-width: 190px;
+    }
+
+    .comapny-assets ul li h3 {
+        font-size: 24px;
+    }
+
+    .comapny-assets ul li p {
+        font-size: 12px;
+    }
+
+    .our-excellence {
+        padding-bottom: 70px;
+    }
+
+    .our-excellence h3 {
+        font-size: 24px;
+        margin-bottom: 24px;
+    }
+
+    .excellence-apart {
+        padding-bottom: 16px;
+    }
+
+    .excellence-apart span {
+        padding: 8px 5px;
+        font-size: 12px;
+        height: 24px;
+        width: 24px;
+        margin-right: 12px;
+    }
+
+    .excellence-apart h4 {
+        font-size: 14px;
+    }
+
+    .portfolio h2 {
+        font-size: 24px;
+    }
+
+    .portfolio h3 {
+        font-size: 18px;
+    }
+
+    .portfolio-grid {
+        margin-top: 23px;
+    }
+
+    .testimonials {
+        margin-top: 66px;
+    }
+
+    .testimonials h4 {
+        font-size: 18px;
+    }
+
+    .testimonials h2 {
+        font-size: 24px;
+    }
+
+    .testimonials h5 {
+        font-size: 12px;
+    }
+
+    .testimonials .slider__col {
+        flex-direction: row;
+        align-items: top;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .testimonials .slider__images {
+        width: 100%;
+    }
+
+    .testimonials .slider__thumbs {
+        min-height: 200px;
+        width: calc(100% - 96px);
+        margin: 0 16px;
+    }
+
+    .testimonials .slider {
+        padding: 32px 0;
+    }
+
+    .testimonials .slider .slider__col {
+        flex: 0 0 300px;
+        max-width: 300px;
+    }
+
+    .testimonials .slider .slider__images .reviews h6 {
+        font-size: 1rem;
+    }
+
+    .contact-us {
+        margin: 52px 0;
+    }
+
+    .contact-us .contact-us-profile {
+        margin-right: 36px;
+    }
+
+    .contact-us .contact-us-profile span svg {
+        width: 151px;
+        height: auto;
+    }
+
+    .contact-us .contact-us-profile p {
+        font-size: 10px;
+    }
+
+    .contact-us-details ul:last-child li svg {
+        width: 12px;
+        height: auto;
+    }
+
+    .contact-us-details ul:first-child {
+        min-width: 100px;
+    }
+
+    .contact-us-details ul li:nth-child(1) {
+        font-size: 13px;
+    }
+
+    .contact-us-details ul li a {
+        font-size: 10px;
+    }
+
+    .contact-us-details .contact-icon {
+        margin-right: 10px;
+    }
+
+    footer h4 {
+        font-size: 11px;
+    }
+
+    /* about-us-page css */
+    .about-us-wrapper h3 {
+        font-size: 18px;
+    }
+
+    .about-us-wrapper .connection h1 {
+        font-size: 36px;
+    }
+
+    .about-us-wrapper p {
+        font-size: 12px;
+    }
+
+    .about-us-wrapper .connection-gallery {
+        margin: 35px 0 50px;
+    }
+
+    .about-us-wrapper .team {
+        margin-top: 50px;
+    }
+
+    .about-us-wrapper .founder-ceo .team .sub-title h2 {
+        font-size: 24px;
+    }
+
+    .about-us-wrapper .team .description h3 {
+        margin-bottom: 20px;
+        font-size: 12px;
+    }
+
+    .about-us-wrapper .founder-ceo .ceo-wrapper {
+        margin-top: 30px;
+    }
+
+    .about-us-wrapper .founder-ceo .ceo-wrapper .ceo .img-wrapper {
+        width: 55px;
+    }
+
+    .about-us-wrapper .founder-ceo .ceo-detail h5 {
+        font-size: 12px;
+    }
+
+    .about-us-wrapper .founder-ceo .ceo-detail p {
+        font-size: 10px;
+    }
+
+    .about-us-wrapper .company-aim blockquote {
+        font-size: 18px;
+    }
+
+    .about-us-wrapper h4 {
+        font-size: 24px;
+    }
+
+    .about-us-wrapper .founder-ceo {
+        padding-bottom: 50px;
+    }
+
+    .about-us-wrapper .snapshot-wrapper {
+        margin-top: 50px;
+    }
+
+    .about-us-wrapper .snapshot-projects ul li svg,
+    .about-us-wrapper .snapshot-projects ul li img {
+        width: 100px;
+    }
+
+    .about-us-wrapper .team h2 {
+        font-size: 18px;
+    }
+
+    .about-us-wrapper .benefits {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    header ul li {
+        font-size: 16px;
+        margin-right: 30px;
+    }
+
+    header {
+        display: none;
+    }
+
+    nav {
+        display: block;
+        padding: 15px 23px !important;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-wrapper svg {
+        width: 138px;
+    }
+
+    nav .menu {
+        background-image: url('./assets/svg/menu.svg');
+        width: 31px;
+        height: 24px;
+        position: relative;
+    }
+
+    .blured-container {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        display: none;
+        backdrop-filter: blur(6px);
+    }
+
+    .blured-container .nav-list {
+        height: 100%;
+        width: 80vw;
+        position: absolute;
+        right: 0;
+        background-color: #000;
+        text-align: center;
+    }
+
+    .blured-container .nav-list .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .blured-container .nav-list .nav-logo svg {
+        width: 135px !important;
+    }
+
+    .blured-container .nav-list ul {
+        margin-top: 70px;
+    }
+
+    .nav-list ul li {
+        display: flex;
+        justify-content: flex-start;
+        padding: 20px 28px;
+        border-bottom: 0.5px solid #FFFFFF;
+        margin: 0 43px;
+    }
+
+    .nav-list ul li .list-icon {
+        margin-right: 23px;
+    }
+
+    .btn-sm-primary {
+        margin-top: 50px;
+    }
+
+    .testimonials .slider__thumbs{
+        height: auto;
+        min-height: auto;
+        width: 100%;
+    }
+
+    .testimonials .slider .slider__col{
+        flex: 0 0 100px;
+    }
+
+    .about-us-wrapper .snapshot-projects {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .about-us-wrapper .snapshot-projects ul {
+        flex-direction: column;
+    }
+
+    .about-us-wrapper .snapshot-projects ul:last-child {
+        margin-top: 20px 0px !important;
+    }
+
+    .about-us-wrapper .snapshot-projects ul:last-child li {
+        margin-bottom: 2.8125rem;
+    }
+
+    .about-us-wrapper .snapshot-projects ul {
+        margin: 0 2.185rem 38px !important;
+    }
+
+    .about-us-wrapper .company-benefits {
+        margin-top: 32px;
+        text-align: left;
+    }
+
+    .about-us-wrapper .benefits ul {
+        flex-direction: column;
+    }
+
+    .testimonials .slider__flex {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        font-size: 12px;
+    }
+
+    .container {
+        padding: 0 35px;
+    }
+
+    .btn-sm-primary {
+        margin-top: 70px;
+        padding: 10px 30px;
+    }
+
+    .btn-secondary {
+        padding: 11px 13px;
+    }
+
+    .technology {
+        padding: 0;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+
+    .technology h1 {
+        font-size: 36px;
+        text-align: left;
+        margin-bottom: 12px;
+    }
+
+    .technology p {
+        font-size: 14px;
+        margin-bottom: 24px;
+    }
+
+    .technology p span {
+        display: inline-block;
+    }
+
+    .gallery {
+        grid-template-areas:
+            "one three"
+            "two two"
+            "four five";
+        padding: 24px 35px;
+    }
+
+    .our-services {
+        margin-top: 37px;
+    }
+
+    .our-services h2 {
+        font-size: 1.5rem;
+    }
+
+    .our-services h3 {
+        font-size: 1.125rem;
+    }
+
+    .services-cards {
+        justify-content: center;
+    }
+
+    .services-cards .card {
+        width: 98%;
+        margin-top: 20px;
+    }
+
+    .services-cards .card .icon {
+        padding-bottom: 1rem;
+    }
+
+    .see-more {
+        font-size: 12px;
+    }
+
+    .about-us {
+        padding: 4.375rem 0;
+    }
+
+    .about-us h2 h3 {
+        font-size: 1.5rem;
+    }
+
+    .about-us .col-6 {
+        width: 100%;
+    }
+
+    .comapny-assets ul li {
+        min-width: 250px;
+    }
+
+    .comapny-assets ul li h3 {
+        font-size: 2.25rem;
+    }
+
+    .our-excellence {
+        padding-bottom: 4rem;
+    }
+
+    .our-excellence h3 {
+        font-size: 24px;
+        margin: 1rem auto;
+    }
+
+    .our-excellence h4 {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .our-excellence p {
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .excellence-apart {
+        padding-bottom: 32px;
+    }
+
+    .excellence-apart span {
+        margin-right: 16px;
+    }
+
+    .portfolio {
+        text-align: left;
+        padding: 0 35px;
+    }
+
+    .portfolio h2 {
+        font-size: 24px;
+    }
+
+    .portfolio h3 {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .portfolio-grid {
+        margin-top: 30px;
+        grid-template-areas:
+            "one three"
+            "two two"
+            "four five";
+    }
+
+    .testimonials {
+        margin-top: 70px;
+        text-align: left;
+    }
+
+    .testimonials h2 {
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .testimonials h4 {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .contact-us {
+        margin: 0;
+        margin-top: 53px;
+        flex-direction: column;
+    }
+
+    .contact-us .contact-us-profile {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .contact-us .contact-us-profile p {
+        font-size: 13px;
+        font-weight: 400;
+    }
+
+    .contact-us-details ul:nth-child(1) {
+        margin-right: 60px;
+    }
+
+    .contact-us-details ul li:nth-child(1) {
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .contact-us-details ul li a {
+        font-size: 13px;
+    }
+
+    .contact-us-details .contact-icon {
+        margin-right: 8px;
+    }
+
+    footer {
+        padding: 20px 35px;
+    }
+
+    footer h4 {
+        font-size: 8px;
+        font-weight: 400;
+        letter-spacing: 1px;
+        margin: 0;
+        padding-top: 8px;
+    }
+
+    footer ul li {
+        margin-right: 7px;
+    }
+
+    footer ul li a svg {
+        width: 11px !important;
+        height: 11px !important;
+    }
+
+    .blured-container {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        display: none;
+        backdrop-filter: blur(6px);
+    }
+
+    .about-us-wrapper .connection {
+        margin-top: 53px;
+    }
+
+    .about-us-wrapper .connection h1 {
+        font-weight: 700;
+    }
+
+    .about-us-wrapper .connection .connection-gallery .connection-gallery-image:last-child {
+        flex: 0 0 50%;
+    }
+
+    .about-us-wrapper .founder-ceo .team {
+        margin-top: 40px;
+    }
+
+    .about-us-wrapper .team .description {
+        margin-top: 20px;
+    }
+
+    .about-us-wrapper .connection .image {
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .about-us-wrapper .connection-gallery {
+        margin: 30px 0 0;
+    }
+
+    .about-us-wrapper .founder-ceo {
+        padding-bottom: 35px;
+    }
+
+    .about-us-wrapper .founder-ceo .team,
+    .about-us-wrapper .ceo-wrapper {
+        flex-direction: column;
+    }
+
+    .about-us-wrapper .team .sub-title {
+        max-width: 100%;
+    }
+
+    .about-us-wrapper .team h2 {
+        font-size: 36px;
+    }
+
+    .about-us-wrapper .founder-ceo .ceo-wrapper .ceo {
+        align-items: center;
+        margin-bottom: 16px;
+    }
+
+    .about-us-wrapper .snapshot-wrapper {
+        text-align: left;
+    }
+
+    .about-us-wrapper .snapshot-wrapper .snapshot-projects {
+        margin-top: 49px;
+    }
+
+    .about-us-wrapper .snapshot-projects ul li img {
+        width: 80px;
+    }
+
+    .about-us-wrapper .company-benefits {
+        margin-top: 70px;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .technology h1 {
+        font-size: 30px;
+    }
+
+    .our-excellence {
+        padding-bottom: 2rem;
+    }
+
+    .about-us-wrapper .connection h1,
+    .about-us-wrapper .team h2 {
+        font-size: 25px;
+    }
+
+    .about-us-wrapper .founder-ceo {
+        padding-bottom: 20px;
+    }
+
+    .about-us-wrapper h4 {
+        font-size: 20px;
+    }
+
+    .about-us-wrapper .snapshot-wrapper .snapshot-projects {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .about-us-wrapper .company-benefits {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (min-width: 400px) {
+    .contact-us-details ul:nth-child(1) {
+        margin-right: 32px;
+    }
+
+    .about-us-wrapper.container {
+        max-width: 900px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .technology h1 {
+        font-size: 28px;
+    }
+}
